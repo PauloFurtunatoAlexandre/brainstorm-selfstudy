@@ -1,0 +1,113 @@
+section.top-menu {
+  background-color: #fafafa;
+  padding-top: 20px;
+}
+
+section.top-menu #logo {
+  margin-left: 40px;
+}
+
+section.top-menu #logo img {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+section.top-menu #menu {
+  float: right;
+}
+
+section.top-menu #menu ul {
+  margin-bottom: 0px;
+}
+
+section.top-menu #menu ul li {
+  display: inline-flex;
+  margin-right: -4px;
+}
+
+section.top-menu #menu ul li:last-child {
+  background-color: #f4c93c;
+  position: relative;
+}
+
+section.top-menu #menu ul li:last-child:before {
+  border-style: solid;
+  border-width: 65px 9px 0 0;
+  border-color: #fafafa transparent transparent transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+section.top-menu #menu ul li:not(:last-child) a:hover {
+  background-color: grey;
+  transition: background-color 0.8s linear;
+}
+
+section.top-menu #menu ul li a {
+  color: black;
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 20px 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+section.top-menu #menu ul li:last-child a {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+}
+
+section.top-menu #menu ul li:last-child a:hover {
+  background-color: tomato;
+  transition: background-color 0.8s linear;
+}
+
+section.top-menu #toggle a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Medias Queries*/
+@media (max-width: 767px) {
+  section.top-menu #menu ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  section.top-menu #logo {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  section.top-menu #menu ul li {
+    width: 100%;
+  }
+
+  section.top-menu #menu ul li:last-child:before {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  section.top-menu #menu {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) {
+  section.top-menu #menu ul li a {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  section.top-menu #menu ul li:last-child:before {
+    border-width: 45px 9px 0 0;
+  }
+}
